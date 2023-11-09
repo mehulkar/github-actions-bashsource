@@ -7,3 +7,5 @@ echo "BASHSOURCE: ${BASH_SOURCE[0]}"
 echo "THIS_DIR: ${THIS_DIR}"
 echo "SCRIPT_DIR: ${SCRIPT_DIR}"
 echo "------------------------"
+
+TURBO="${THIS_DIR}/nest/../turbo"
