@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  turborepo_integration:
-    name: Turborepo Integration Tests
+  do:
+    name: Do it
     runs-on: ${{ matrix.os.runner }}
     strategy:
       fail-fast: false
