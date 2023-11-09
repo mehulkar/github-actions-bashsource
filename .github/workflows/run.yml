@@ -1,0 +1,26 @@
+name: Test
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  turborepo_integration:
+    name: Turborepo Integration Tests
+    runs-on: ${{ matrix.os.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          # - name: ubuntu
+          #   runner: ubuntu-latest
+          # - name: macos
+          #   runner: macos-latest
+          - name: windows
+            runner: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run
+        shell: bash
+        run: ./start.sh
